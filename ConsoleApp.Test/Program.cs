@@ -7,8 +7,8 @@ Console.WriteLine($"New value = {fullName}");
 
 const string middleName = "MiddleName";
 Console.WriteLine($"Original value = {middleName}");
-middleName = "MiddleName 2";
-Console.WriteLine($"New value = {middleName}");
+//middleName = "MiddleName 2";
+//Console.WriteLine($"New value = {middleName}");
 
 
 //DateTime now = DateTime.Now;
