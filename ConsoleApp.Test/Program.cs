@@ -1,4 +1,26 @@
-﻿//string fullName = "Student Fullname";
+﻿
+using ConsoleApp.Test;
+
+Console.WriteLine("----------------- START: CLASS ---------------------");
+
+var student = new Student();
+
+student.FirstName = "Student Fullname";
+Console.WriteLine($"Student FistName [student]: {student.FirstName}");
+
+var anotherStudent = new Student();
+Console.WriteLine($"Student FistName [anotherStudent]: {anotherStudent.FirstName}");
+
+var lastStudent = new Student("Student Fullname 2");
+Console.WriteLine($"Student FistName [lastStudent]: {lastStudent.FirstName}");
+
+
+Console.WriteLine("----------------- START: CLASS ---------------------");
+
+
+
+
+//string fullName = "Student Fullname";
 //Console.WriteLine($"Original value = {fullName}");
 
 //fullName = "Student Fullname 2";
