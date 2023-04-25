@@ -4,15 +4,18 @@ using ConsoleApp.Test;
 Console.WriteLine("----------------- START: CLASS ---------------------");
 
 var student = new Student();
-
 student.FirstName = "Student Fullname";
 Console.WriteLine($"Student FistName [student]: {student.FirstName}");
 
-var anotherStudent = new Student();
-Console.WriteLine($"Student FistName [anotherStudent]: {anotherStudent.FirstName}");
+string studentFullName = student.GetFullName("Enco", "Tahiri");
+Console.WriteLine($"Student Full Name [student]: {studentFullName}");
 
-var lastStudent = new Student("Student Fullname 2");
-Console.WriteLine($"Student FistName [lastStudent]: {lastStudent.FirstName}");
+// 
+string studentFullNameStatic = StudentStatic.GetFullName("Enco", "Tahiri");
+Console.WriteLine($"Student Full Name [student]: {studentFullNameStatic}");
+
+//var lastStudent = new Student("Student Fullname 2");
+//Console.WriteLine($"Student FistName [lastStudent]: {lastStudent.FirstName}");
 
 
 Console.WriteLine("----------------- START: CLASS ---------------------");
