@@ -44,8 +44,13 @@ namespace StudentApp.API.Controllers
         }
 
         [HttpPut("UpdateStudent")]
-        public IActionResult UpdateStudent()
+        public IActionResult UpdateStudent([FromBody]PutStudentDTO payload, int id)
         {
+            //1. Duke perdour ID marrim te dhenat nga databaza
+
+            //2. Perditesojme Studentin e DB me te dhenat e payload-it
+
+            //3. Ruhen te dhenat ne database
 
             return Ok("Studenti u modifikua me sukses!");
         }
@@ -56,8 +61,5 @@ namespace StudentApp.API.Controllers
 
             return Ok($"Studenti me id = {id} u fshi me sukses!");
         }
-
-
-
     }
 }
