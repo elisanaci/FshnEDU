@@ -1,7 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using StudentApp.API.Data.DTOs;
-using StudentApp.API.Data.Models;
+﻿using Microsoft.AspNetCore.Mvc;
+using StudentApp.API.Data.DTOs.Student;
 
 namespace StudentApp.API.Controllers
 {
@@ -25,13 +23,6 @@ namespace StudentApp.API.Controllers
         //Krijo nje API endpoint per te marre te dhenat nga DB
         [HttpGet("GetStudentById/{id}")]
         public IActionResult GetStudentById(int id)
-        {
-            return Ok($"Studenti me id = {id} u kthye me sukses!");
-        }
-
-        //Krijo nje API endpoint per te marre te dhenat nga DB
-        [HttpGet("GetStudentById/RequestUrl")]
-        public IActionResult GetStudentByIdRequestUrl(int id, string firstName, string lastName)
         {
             return Ok($"Studenti me id = {id} u kthye me sukses!");
         }

@@ -1,4 +1,4 @@
-﻿namespace StudentApp.API.Data.DTOs
+﻿namespace StudentApp.API.Data.DTOs.Student
 {
     public class PostStudentDTO
     {

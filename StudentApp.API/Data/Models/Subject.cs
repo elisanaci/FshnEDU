@@ -1,0 +1,10 @@
+﻿using StudentApp.API.Data.Base;
+
+namespace StudentApp.API.Data.Models
+{
+    public class Subject : BaseClass
+    {
+        public string Code { get; set; }
+        public string Name { get; set; }
+    }
+}
