@@ -43,7 +43,9 @@ namespace StudentApp.API.Controllers
                 LastName = payload.LastName,
                 DOB = DateTime.UtcNow.AddYears(-20),
                 GPA = payload.GPA,
-                DateCreated = DateTime.UtcNow
+                DateCreated = DateTime.UtcNow,
+
+                SubjectId = payload.SubjectId
             };
 
             _appDbContext.Students.Add(newStudent);
@@ -66,6 +68,9 @@ namespace StudentApp.API.Controllers
             student.LastName = payload.LastName;
             student.DOB = DateTime.UtcNow.AddYears(-20);
             student.GPA = payload.GPA;
+
+            //Add Refrence to Subject Id
+            student.SubjectId = payload.SubjectId;
 
             //3. Ruhen te dhenat ne database
             _appDbContext.Students.Update(student);

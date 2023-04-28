@@ -7,5 +7,8 @@
         public string LastName { get; set; }
         public DateTime DOB { get; set; }
         public double GPA { get; set; }
+
+        //Add a reference to Subject table
+        public int SubjectId { get; set; }
     }
 }
