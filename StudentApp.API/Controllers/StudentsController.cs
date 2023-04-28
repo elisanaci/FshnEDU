@@ -7,6 +7,7 @@ namespace StudentApp.API.Controllers
     [ApiController]
     public class StudentsController : ControllerBase
     {
+        //Koment
 
         //Krijo nje API endpoint per te marre te dhenat nga DB
         [HttpGet("GetAllStudents")]
