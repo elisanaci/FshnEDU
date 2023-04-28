@@ -6,5 +6,8 @@ namespace StudentApp.API.Data.Models
     {
         public string Code { get; set; }
         public string Name { get; set; }
+
+        //Define Reference with Student table
+        public List<Student> Students { get; set; }
     }
 }
